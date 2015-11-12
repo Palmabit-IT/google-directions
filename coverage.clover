@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1447366471">
+  <project timestamp="1447366471">
+    <package name="Palmabit\GoogleDirections\Abstracts">
+      <file name="/home/vagrant/Code/google-directions/src/Abstracts/Api.php">
+        <class name="Api" namespace="Palmabit\GoogleDirections\Abstracts">
+          <metrics methods="6" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="27" elements="38" coveredelements="31"/>
+        </class>
+        <line num="19" type="method" name="__construct" crap="1" count="16"/>
+        <line num="21" type="stmt" count="16"/>
+        <line num="22" type="stmt" count="16"/>
+        <line num="32" type="method" name="setTimeout" crap="2" count="12"/>
+        <line num="34" type="stmt" count="12"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="12"/>
+        <line num="38" type="stmt" count="7"/>
+        <line num="39" type="stmt" count="7"/>
+        <line num="42" type="method" name="validateTimeout" crap="3" count="12"/>
+        <line num="44" type="stmt" count="12"/>
+        <line num="45" type="stmt" count="3"/>
+        <line num="47" type="stmt" count="9"/>
+        <line num="48" type="stmt" count="2"/>
+        <line num="50" type="stmt" count="7"/>
+        <line num="53" type="method" name="__call" crap="3.10" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="56" type="stmt" count="1"/>
+        <line num="57" type="stmt" count="1"/>
+        <line num="58" type="stmt" count="1"/>
+        <line num="59" type="stmt" count="1"/>
+        <line num="60" type="stmt" count="1"/>
+        <line num="61" type="stmt" count="1"/>
+        <line num="63" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="68" type="method" name="call" crap="2" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <line num="71" type="stmt" count="0"/>
+        <line num="72" type="stmt" count="0"/>
+        <line num="75" type="method" name="buildUrl" crap="2" count="2"/>
+        <line num="77" type="stmt" count="2"/>
+        <line num="78" type="stmt" count="2"/>
+        <line num="80" type="stmt" count="2"/>
+        <line num="81" type="stmt" count="2"/>
+        <line num="82" type="stmt" count="1"/>
+        <line num="83" type="stmt" count="2"/>
+        <line num="84" type="stmt" count="2"/>
+        <metrics loc="87" ncloc="76" classes="1" methods="6" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="27" elements="38" coveredelements="31"/>
+      </file>
+    </package>
+    <package name="Palmabit\GoogleDirections\Api">
+      <file name="/home/vagrant/Code/google-directions/src/Api/Directions.php">
+        <class name="Directions" namespace="Palmabit\GoogleDirections\Api">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="16" type="method" name="getOptionalFields" crap="1" count="1"/>
+        <line num="18" type="stmt" count="1"/>
+        <metrics loc="21" ncloc="20" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+    </package>
+    <package name="Palmabit\GoogleDirections">
+      <file name="/home/vagrant/Code/google-directions/src/GoogleDirections.php">
+        <class name="GoogleDirections" namespace="Palmabit\GoogleDirections" fullPackage="Palmabit" package="Palmabit">
+          <metrics methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="24" coveredelements="24"/>
+        </class>
+        <line num="34" type="method" name="__construct" crap="3" count="10"/>
+        <line num="36" type="stmt" count="10"/>
+        <line num="37" type="stmt" count="5"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="4"/>
+        <line num="43" type="stmt" count="6"/>
+        <line num="44" type="stmt" count="6"/>
+        <line num="46" type="stmt" count="9"/>
+        <line num="53" type="method" name="setApikey" crap="1" count="13"/>
+        <line num="55" type="stmt" count="13"/>
+        <line num="56" type="stmt" count="4"/>
+        <line num="57" type="stmt" count="4"/>
+        <line num="59" type="method" name="validateApikey" crap="3" count="18"/>
+        <line num="61" type="stmt" count="18"/>
+        <line num="62" type="stmt" count="5"/>
+        <line num="64" type="stmt" count="13"/>
+        <line num="65" type="stmt" count="4"/>
+        <line num="67" type="stmt" count="9"/>
+        <line num="75" type="method" name="getApikey" crap="2" count="5"/>
+        <line num="77" type="stmt" count="5"/>
+        <line num="85" type="method" name="createDirectionApi" crap="1" count="4"/>
+        <line num="87" type="stmt" count="4"/>
+        <metrics loc="90" ncloc="60" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="24" coveredelements="24"/>
+      </file>
+    </package>
+    <file name="/home/vagrant/Code/google-directions/src/Interfaces/Api.php">
+      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <package name="Palmabit\GoogleDirections\Exceptions">
+      <file name="/home/vagrant/Code/google-directions/src/exceptions/GoogleDirectionsException.php">
+        <class name="GoogleDirectionsException" namespace="Palmabit\GoogleDirections\Exceptions" fullPackage="Palmabit" package="Palmabit">
+          <metrics methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="12" ncloc="8" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="5" loc="219" ncloc="173" classes="4" methods="12" coveredmethods="10" conditionals="0" coveredconditionals="0" statements="52" coveredstatements="47" elements="64" coveredelements="57"/>
+  </project>
+</coverage>

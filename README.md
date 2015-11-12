@@ -61,14 +61,14 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 [ico-version]: https://img.shields.io/packagist/v/palmabit/google-directions.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/thephppalmabit/google-directions/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/palmabit/google-directions.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/palmabit/google-directions.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/palmabit/google-directions.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/Palmabit-IT/google-directions/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/Palmabit-IT/google-directions.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/Palmabit-IT/google-directions.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/Palmabit-IT/google-directions.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/palmabit/google-directions
-[link-travis]: https://travis-ci.org/palmabit/google-directions
-[link-scrutinizer]: https://scrutinizer-ci.com/g/palmabit/google-directions/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/palmabit/google-directions
+[link-travis]: https://travis-ci.org/Palmabit-IT/google-directions
+[link-scrutinizer]: https://scrutinizer-ci.com/g/Palmabit-IT/google-directions/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/Palmabit-IT/google-directions
 [link-author]: https://github.com/Palmabit-IT
 [link-contributors]: ../../contributors

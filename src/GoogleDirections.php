@@ -25,8 +25,6 @@ class GoogleDirections
     /** @var string The instance $apikey, settable once per new instance */
     private $instanceApikey;
 
-    private $factory;
-
     /**
      * @param string|null $apikey The google API apikey, as obtained on https://developers.google.com/maps/documentation/directions/get-api-key
      * @throws GoogleDirectionsException When no token is provided
@@ -66,7 +64,6 @@ class GoogleDirections
         }
         return true;
     }
-
 
     /**
      * Returns the apikey that has been defined.

@@ -1,0 +1,42 @@
+{
+    "name": "Palmabit-IT/google-directions",
+    "description": "Calculates distance between two given plases using Google directions API",
+    "keywords": [
+        "distance",
+        "google-directions"
+    ],
+    "homepage": "https://github.com/Palmabit-IT/google-directions",
+    "license": "MIT",
+    "authors": [{
+        "name": "Francesco",
+        "email": "f.falanga@palmabit.com",
+        "homepage": "http://palmabit.com",
+        "role": "Developer"
+    }],
+    "require": {
+        "php": ">=5.5.0",
+        "guzzlehttp/guzzle": "~5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*",
+        "scrutinizer/ocular": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Palmabit\\GoogleDirections\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Palmabit\\GoogleDirections\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

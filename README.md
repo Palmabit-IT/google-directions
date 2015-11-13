@@ -31,6 +31,26 @@ or
 GoogleDirections::setApikey($apikey);
 $gd = new GoogleDirections();
 ```
+then
+
+``` php
+
+/*
+ * Example of API call:
+ * https://maps.googleapis.com/maps/api/directions/json?origin=Milano&destination=Venezia&key=my-google-apikey
+ *
+ * with a timeout of 40s, defaults to 30s if empty
+ */
+
+$response = $gd
+    ->createDirectionAPI()
+    ->setTimeout(4000)
+    ->setOrigin('Milano')
+    ->setDestination('Verona')
+    ->call();
+
+var_dump ($response);
+```
 
 ## Change log
 

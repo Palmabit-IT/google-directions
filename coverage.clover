@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1447366471">
-  <project timestamp="1447366471">
+<coverage generated="1447422651">
+  <project timestamp="1447422651">
     <package name="Palmabit\GoogleDirections\Abstracts">
       <file name="/home/vagrant/Code/google-directions/src/Abstracts/Api.php">
         <class name="Api" namespace="Palmabit\GoogleDirections\Abstracts">
@@ -62,31 +62,31 @@
         <class name="GoogleDirections" namespace="Palmabit\GoogleDirections" fullPackage="Palmabit" package="Palmabit">
           <metrics methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="24" coveredelements="24"/>
         </class>
-        <line num="34" type="method" name="__construct" crap="3" count="10"/>
-        <line num="36" type="stmt" count="10"/>
-        <line num="37" type="stmt" count="5"/>
+        <line num="32" type="method" name="__construct" crap="3" count="10"/>
+        <line num="34" type="stmt" count="10"/>
+        <line num="35" type="stmt" count="5"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="1"/>
         <line num="38" type="stmt" count="1"/>
-        <line num="39" type="stmt" count="1"/>
-        <line num="40" type="stmt" count="1"/>
-        <line num="42" type="stmt" count="4"/>
-        <line num="43" type="stmt" count="6"/>
-        <line num="44" type="stmt" count="6"/>
-        <line num="46" type="stmt" count="9"/>
-        <line num="53" type="method" name="setApikey" crap="1" count="13"/>
-        <line num="55" type="stmt" count="13"/>
-        <line num="56" type="stmt" count="4"/>
-        <line num="57" type="stmt" count="4"/>
-        <line num="59" type="method" name="validateApikey" crap="3" count="18"/>
-        <line num="61" type="stmt" count="18"/>
-        <line num="62" type="stmt" count="5"/>
-        <line num="64" type="stmt" count="13"/>
-        <line num="65" type="stmt" count="4"/>
-        <line num="67" type="stmt" count="9"/>
-        <line num="75" type="method" name="getApikey" crap="2" count="5"/>
-        <line num="77" type="stmt" count="5"/>
-        <line num="85" type="method" name="createDirectionApi" crap="1" count="4"/>
-        <line num="87" type="stmt" count="4"/>
-        <metrics loc="90" ncloc="60" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="24" coveredelements="24"/>
+        <line num="40" type="stmt" count="4"/>
+        <line num="41" type="stmt" count="6"/>
+        <line num="42" type="stmt" count="6"/>
+        <line num="44" type="stmt" count="9"/>
+        <line num="51" type="method" name="setApikey" crap="1" count="13"/>
+        <line num="53" type="stmt" count="13"/>
+        <line num="54" type="stmt" count="4"/>
+        <line num="55" type="stmt" count="4"/>
+        <line num="57" type="method" name="validateApikey" crap="3" count="18"/>
+        <line num="59" type="stmt" count="18"/>
+        <line num="60" type="stmt" count="5"/>
+        <line num="62" type="stmt" count="13"/>
+        <line num="63" type="stmt" count="4"/>
+        <line num="65" type="stmt" count="9"/>
+        <line num="72" type="method" name="getApikey" crap="2" count="5"/>
+        <line num="74" type="stmt" count="5"/>
+        <line num="82" type="method" name="createDirectionApi" crap="1" count="4"/>
+        <line num="84" type="stmt" count="4"/>
+        <metrics loc="87" ncloc="57" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="24" coveredelements="24"/>
       </file>
     </package>
     <file name="/home/vagrant/Code/google-directions/src/Interfaces/Api.php">
@@ -100,6 +100,6 @@
         <metrics loc="12" ncloc="8" classes="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
     </package>
-    <metrics files="5" loc="219" ncloc="173" classes="4" methods="12" coveredmethods="10" conditionals="0" coveredconditionals="0" statements="52" coveredstatements="47" elements="64" coveredelements="57"/>
+    <metrics files="5" loc="216" ncloc="170" classes="4" methods="12" coveredmethods="10" conditionals="0" coveredconditionals="0" statements="52" coveredstatements="47" elements="64" coveredelements="57"/>
   </project>
 </coverage>

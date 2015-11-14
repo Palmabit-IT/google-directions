@@ -1,5 +1,4 @@
-<?php
-namespace Palmabit\GoogleDirections\Interfaces;
+<?php namespace Palmabit\GoogleDirections\Interfaces;
 
 interface Api
 {

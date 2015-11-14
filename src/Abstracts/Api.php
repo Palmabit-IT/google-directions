@@ -1,6 +1,4 @@
-<?php
-
-namespace Palmabit\GoogleDirections\Abstracts;
+<?php namespace Palmabit\GoogleDirections\Abstracts;
 
 abstract class Api implements \Palmabit\GoogleDirections\Interfaces\Api
 {

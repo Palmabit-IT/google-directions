@@ -1,6 +1,4 @@
-<?php
-
-namespace Palmabit\GoogleDirections\Exceptions;
+<?php namespace Palmabit\GoogleDirections\Exceptions;
 
 /**
  * Class GoogleDirectionsException

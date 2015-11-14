@@ -1,5 +1,5 @@
-<?php
-namespace Palmabit\GoogleDirections\Api;
+<?php namespace Palmabit\GoogleDirections\Api;
+
 use GuzzleHttp\Client;
 use Palmabit\GoogleDirections\Abstracts\Api;
 

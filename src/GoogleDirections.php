@@ -1,6 +1,4 @@
-<?php
-
-namespace Palmabit\GoogleDirections;
+<?php namespace Palmabit\GoogleDirections;
 
 use Palmabit\GoogleDirections\Exceptions\GoogleDirectionsException;
 //use Palmabit\GoogleDirections\Entity\Directions;

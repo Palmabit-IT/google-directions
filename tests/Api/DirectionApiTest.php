@@ -20,20 +20,21 @@ class ProductApiTest extends \PHPUnit_Framework_TestCase
         $this->apiWithMock = $gd->createDirectionApi();
     }
 
-    // protected function getValidMock()
-    // {
-    //     if (!$this->validMock) {
-    //         $this->validMock = new MockHandler([
-    //             new Response(200, [],
-    //                 file_get_contents(__DIR__ . '/../Mocks/Directions/mi-ve.json'))
-    //         ]);
-    //     }
-    //     return $this->validMock;
-    // }
-
     public function testCall()
     {
-        // $directions = $this->apiWithMock()->call();
+      $apikey = 'apikey';
+      $gd_stub = $this->getMockBuilder('\Palmabit\GoogleDirections\Api\Directions')
+         ->setConstructorArgs([$apikey])
+         ->getMock();
+
+      $gd_stub->expects($this->once())
+         ->method('call')
+         ->will($this->returnValue( json_decode( file_get_contents(__DIR__ . '/../Mocks/Directions/mi-ve.json' ),true) ));
+
+      $directions = $gd_stub->call();
+
+      $this->assertEquals($directions['status'], 'OK');
+
     }
 
     public function testBuildUrlNoCustomFields()

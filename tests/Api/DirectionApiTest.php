@@ -3,6 +3,8 @@
 namespace Palmabit\GoogleDirections\Test\Api;
 
 use Palmabit\GoogleDirections\GoogleDirections;
+use GuzzleHttp\Handler\MockHandler;
+use GuzzleHttp\Psr7\Response;
 
 class ProductApiTest extends \PHPUnit_Framework_TestCase
 {
@@ -44,6 +46,30 @@ class ProductApiTest extends \PHPUnit_Framework_TestCase
             ->buildUrl();
         $expectedUrl = 'https://maps.googleapis.com/maps/api/directions/json?key=apikey';
         $this->assertEquals($expectedUrl, $url);
+    }
+
+    public function testEmptyCustomFieldRaisesAnException()
+    {
+        $this->setExpectedException('\BadMethodCallException');
+        $this
+            ->apiWithMock
+            ->aaaOrigin(null);
+    }
+
+    public function testCustomFieldNotSupportedRaisesAnException()
+    {
+        $this->setExpectedException('\BadMethodCallException');
+        $this
+            ->apiWithMock
+            ->setCustomfileds();
+    }
+
+    public function testInvalidPrefixOnCustomFieldRaisesAnException()
+    {
+        $this->setExpectedException('\InvalidArgumentException');
+        $this
+            ->apiWithMock
+            ->setOrigin(null);
     }
 
     public function testBuildUrlMultipleCustomFields()

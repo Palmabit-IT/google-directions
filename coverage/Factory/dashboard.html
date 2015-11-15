@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Dashboard for /home/vagrant/Code/google-directions/src/Exceptions</title>
+  <title>Dashboard for /home/vagrant/Code/google-directions/src/Factory</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/nv.d3.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
      <div class="col-md-12">
       <ol class="breadcrumb">
         <li><a href="../index.html">/home/vagrant/Code/google-directions/src</a></li>
-        <li><a href="index.html">Exceptions</a></li>
+        <li><a href="index.html">Factory</a></li>
         <li class="active">(Dashboard)</li>
 
       </ol>
@@ -176,7 +176,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#methodCoverageDistribution svg')
-      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,0], "Method Coverage"))
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,1], "Method Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -226,7 +226,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Cyclomatic Complexity');
 
     d3.select('#classComplexity svg')
-      .datum(getComplexityData([[100,0,"<a href=\"GoogleDirectionsException.php.html#7\">GoogleDirectionsException<\/a>"]], 'Class Complexity'))
+      .datum(getComplexityData([[100,1,"<a href=\"Entity.php.html#10\">Entity<\/a>"]], 'Class Complexity'))
       .transition()
       .duration(500)
       .call(chart);
@@ -250,7 +250,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Method Complexity');
 
     d3.select('#methodComplexity svg')
-      .datum(getComplexityData([], 'Method Complexity'))
+      .datum(getComplexityData([[100,1,"<a href=\"Entity.php.html#22\">Entity::createAppropriate<\/a>"]], 'Method Complexity'))
       .transition()
       .duration(500)
       .call(chart);

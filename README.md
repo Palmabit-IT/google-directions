@@ -10,6 +10,8 @@
 Calculates distance between two given places using Google directions API.
 For further information see https://developers.google.com/maps/documentation/directions/intro
 
+NOTE: still under development, many change can happen
+
 ## Install
 
 Via Composer
@@ -42,15 +44,37 @@ then
  * with a timeout of 40s, defaults to 30s if empty
  */
 
-$response = $gd
+$direction = $gd
     ->createDirectionAPI()
     ->setTimeout(4000)
     ->setOrigin('Milano')
     ->setDestination('Verona')
     ->call();
 
-var_dump ($response);
+/*
+ * now you can use all $direction methods
+ * see above for detailed lists
+ */
+
+//get the status
+$status = $direction->getStatus();
+
+//get the distance between Milan and Venice
+$distance = $direction->getDistance();
+
+//get summary
+$summary = $direction->getSummary();
+
+//get steps
+$steps = $direction->getSteps();
+
+//get duration
+$duration = $direction->getDuration();
+
+
 ```
+
+
 
 ## Change log
 

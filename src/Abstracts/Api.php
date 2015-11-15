@@ -1,5 +1,6 @@
 <?php namespace Palmabit\GoogleDirections\Abstracts;
 
+
 abstract class Api implements \Palmabit\GoogleDirections\Interfaces\Api
 {
 
@@ -14,9 +15,23 @@ abstract class Api implements \Palmabit\GoogleDirections\Interfaces\Api
 
     protected $apikey;
 
+    protected $googleDirections;
+
     public function __construct($apikey)
     {
         $this->apikey = $apikey;
+    }
+
+
+    /**
+     * Sets the GoogleDirection instance on the child class
+     * Used to later fetch the token, HTTP client, EntityFactory, etc
+     * @param GoogleDirection $gd
+     * @return $this
+     */
+    public function registerGoogleDirection(\Palmabit\GoogleDirections\GoogleDirections $gd) {
+        $this->googleDirections = $gd;
+        return $this;
     }
 
     /**
@@ -54,9 +69,12 @@ abstract class Api implements \Palmabit\GoogleDirections\Interfaces\Api
         $field = lcfirst(substr($name, 3));
         $fields = static::getOptionalFields();
         if (in_array($field, $fields)) {
-            if ($arguments[0] !== null) {
-                $this->fieldSettings[$field] = $arguments[0];
-                return $this;
+            if ($prefix == 'set') {
+              if ($arguments[0] !== null) {
+                  $this->fieldSettings[$field] = $arguments[0];
+                  return $this;
+              }
+              throw new \InvalidArgumentException('Insert a valid value on custom fields');
             }
             throw new \BadMethodCallException('Prefix "'.$prefix.'" not allowed.');
         }
@@ -65,9 +83,8 @@ abstract class Api implements \Palmabit\GoogleDirections\Interfaces\Api
 
     public function call()
     {
-      $url = $this->buildUrl();
-      $result = file_get_contents($url);
-      return json_decode(utf8_encode($result), true);
+      $response = $this->googleDirections->getHttpClient()->get($this->buildUrl());
+      return $this->googleDirections->getEntityFactory()->createAppropriate($response);
     }
 
     public function buildUrl()

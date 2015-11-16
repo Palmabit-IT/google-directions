@@ -10,7 +10,7 @@
 Calculates distance between two given places using Google directions API.
 For further information see https://developers.google.com/maps/documentation/directions/intro
 
-NOTE: still under development, many change can happen
+NOTE: still considered under development, which means that things might change a lot. If you want to use it anyway, just remember that future releases might contain breaking changes.
 
 ## Install
 

@@ -1,6 +1,6 @@
 {
     "name": "palmabit/google-directions",
-    "description": "Calculates distance between two given plases using Google directions API",
+    "description": "PHP Wrapper for Google directions API.",
     "keywords": [
         "distance",
         "google-directions"
@@ -36,7 +36,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.0-dev"
+            "dev-master": "0.0-dev"
         }
     }
 }

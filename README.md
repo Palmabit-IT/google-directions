@@ -7,7 +7,7 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 
 
-Calculates distance between two given places using Google directions API.
+PHP Wrapper for Google directions API.
 For further information see https://developers.google.com/maps/documentation/directions/intro
 
 NOTE: still considered under development, which means that things might change a lot. If you want to use it anyway, just remember that future releases might contain breaking changes.
@@ -17,7 +17,7 @@ NOTE: still considered under development, which means that things might change a
 Via Composer
 
 ``` bash
-$ composer require Palmabit-IT/google-directions
+$ composer require palmabit/google-directions
 ```
 
 ## Usage
